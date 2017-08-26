@@ -1,3 +1,13 @@
+$color__primary--slate-blue: #192F3F;
+$color__primary--jet-grey: #353535;
+$color__primary--myrtle-green: #3C6E71;
+$color__primary--gainsboro-grey: #D9D9D9;
+
+$box-shadow-sm: 0px 4px 4px rgba(0,0,0,0.25);
+$box-shadow-md: 0px 4px 15px rgba(0,0,0,0.25);
+$box-shadow-lg: 0px 6px 20px rgba(0,0,0,0.25);
+
+
 body, html {
     width: 100%;
     height: 100%;
@@ -32,18 +42,19 @@ hr {
         color: white;
         font-size: 30px;
     }
-    .navbar-brand {
-        background-image: url('../../assets/images/affinity-letter.png');
+    .logo {
+        background-image: url('../img/affinity-letter.png');
         background-size: cover;
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
+        margin-top: 7px;
     }
 }
 
 .showcase {
     width: 100%;
     height: 100%;
-    background-image: url('../../assets/images/startup-593304.jpg');
+    background-image: url('../img/startup.jpg');
     background-size: cover;
     background-position: right -110px top;
     .overlay {
@@ -52,16 +63,23 @@ hr {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #192F3F;
+        background-color: $color__primary--slate-blue;
         opacity: .9;
+    }
+    .logo {
+        background-image: url('../img/affinity-letter.png');
+        background-size: cover;
+        width: 175px;
+        height: 175px;
+        margin: 0 auto;
     }
     .content {
         position: relative;
         color: white;
-        margin-top: -20px;
+        margin-top: -80px;
     }
     .title {
-        font-size: 68px;
+        font-size: 65px;
         font-family: 'Poppins';
         font-weight: bold;
         letter-spacing: 4px;
@@ -91,21 +109,27 @@ hr {
 }
 
 .gallery {
+    padding: 40px 0 20px 0;
     .title {
         font-size: 24px;
         font-weight: bold;
-        padding-top: 35px;
+        padding-bottom: 20px;
     }
     .image-wrap {
-        padding: 20px;
+        padding: 14px;
     }
     .image {
         height: 240px;
+        box-shadow: $box-shadow-md;
+        border-radius: 4px;
+    }
+    img {
+        border-radius: 4px;
     }
 }
 
 .feature {
-    padding: 70px 10px;
+    padding: 70px 0;
     text-align: center;
     .title {
         font-size: 24px;
@@ -117,7 +141,7 @@ hr {
         font-size: 15px;
         font-weight: 400;
         line-height: 40px;
-        padding: 5px;
+        padding: 9px;
     }
     .btn {
         background: transparent;
@@ -134,7 +158,7 @@ hr {
 
 .contact {
     text-align: center;
-    padding: 70px 10px;
+    padding: 70px 10px 40px 10px;
     text-align: center;
     .content {
         padding-bottom: 40px;
@@ -150,9 +174,11 @@ hr {
     }
     label {
         font-family: 'Poppins';
-        font-weight: 400;
+        font-size: 13px;
+        font-weight: 500;
         display: block;
         text-align: left;
+        padding-top: 10px;
     }
     input {
         border: none;
@@ -160,13 +186,16 @@ hr {
     }
     textarea {
         border: 1px solid #aaa;
+        margin-top: 20px;
     }
     .disclaimer {
         font-size: 14px;
+        padding-top: 20px;
     }
 }
 
 .mastfoot {
+    padding-top: 10px;
     .social-icons {
         list-style-type: none;
         padding: 0;
@@ -179,8 +208,12 @@ hr {
         display: inline-block;
     }
     .disclaimer {
-        font-size: 15px;
-        font-weight: 300;
+        font-size: 12px;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+    .fa-copyright {
+        font-size: 12px
     }
 }
 
