@@ -7,6 +7,11 @@ $box-shadow-sm: 0px 4px 4px rgba(0,0,0,0.25);
 $box-shadow-md: 0px 4px 15px rgba(0,0,0,0.25);
 $box-shadow-lg: 0px 6px 20px rgba(0,0,0,0.25);
 
+$bp-sm: 544px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xlg: 1200px;
+
 
 body, html {
     width: 100%;
@@ -38,7 +43,7 @@ hr {
     top: 0;
     width: 100%;
     z-index: 100;
-    .mobile-nav {
+    .fa-bars {
         color: white;
         font-size: 30px;
     }
@@ -47,7 +52,7 @@ hr {
         background-size: cover;
         width: 40px;
         height: 40px;
-        margin-top: 7px;
+        margin-top: 5px;
     }
 }
 
@@ -57,6 +62,7 @@ hr {
     background-image: url('../img/startup.jpg');
     background-size: cover;
     background-position: right -110px top;
+    background-repeat: no-repeat;
     .overlay {
         position: absolute;
         top: 0;
@@ -93,7 +99,7 @@ hr {
         padding: 0;
         margin: 0;
     }
-    .disclaimer {
+    .phone, .email {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -102,9 +108,12 @@ hr {
         color: white;
         font-size: 16px;
         font-weight: 300;
-        padding: 5px;
+        padding: 8px 14px;
         margin: 0 auto;
         text-align: center;
+    }
+    .email {
+        display: none;
     }
 }
 
@@ -121,10 +130,10 @@ hr {
     .image {
         height: 240px;
         box-shadow: $box-shadow-md;
-        border-radius: 4px;
+        border-radius: 3px;
     }
     img {
-        border-radius: 4px;
+        border-radius: 3px;
     }
 }
 
@@ -217,3 +226,60 @@ hr {
     }
 }
 
+@media (min-width: $bp-md) {
+    .gallery {
+        .image {
+            height: 400px;
+        }
+    }
+}
+
+@media (min-width: $bp-lg) {
+    .masthead {
+        .nav-link {
+            color: white;
+            font-weight: 500;
+            &::after {
+                content: '/';
+                padding-left: 14px;
+            }
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+
+    .showcase {
+        background-attachment: fixed;
+        background-position: center center;
+        .logo {
+            width: 240px;
+            height: 240px;
+        }
+        .title {
+            font-size: 100px;
+            letter-spacing: 10px;
+        }
+        .lead {
+            font-size: 22px;
+        }
+        .phone {
+            text-align: right;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .email {
+            text-align: left;
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        
+    }
+
+    .gallery {
+        .image {
+            height: 350px;
+        }
+    }
+}
