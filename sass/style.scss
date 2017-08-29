@@ -74,13 +74,13 @@ hr {
         right: 0;
         bottom: 0;
         background-color: $color__primary--slate-blue;
-        opacity: .7;
+        opacity: .8;
     }
     .logo {
-        background-image: url('../img/affinity-letter.png');
+        background-image: url('../img/affinity-tag.png');
         background-size: cover;
-        width: 135px;
-        height: 135px;
+        width: 290px;
+        height: 140px;
         margin: 0 auto;
     }
     .content {
@@ -343,8 +343,8 @@ hr {
         background-attachment: fixed;
         background-position: center center;
         .logo {
-            width: 175px;
-            height: 175px;
+            width: 575px;
+            height: 275px;
         }
         .title {
             font-size: 77px;
