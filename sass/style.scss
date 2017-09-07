@@ -83,13 +83,13 @@ hr {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: $color__primary--purple;
+        background-color: $color__primary--dark-blue;
         opacity: .8;
     }
     .logo {
         background-image: url('../img/affinity-tag.png');
         background-size: cover;
-        width: 290px;
+        width: 300px;
         height: 140px;
         margin: 0 auto;
     }
@@ -190,6 +190,55 @@ hr {
     }
 }
 
+.mission {
+    background-image: url('../img/affinity-pattern.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #eee;
+        opacity: .65;
+    }
+    .content {
+        position: relative;
+    }
+    .title {
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .lead {
+        font-size: 16px;
+        line-height: 40px;
+        padding: 25px 0;
+    }
+    hr {
+        border-top: 1px solid #ccc;
+        width: 30%;
+        margin-bottom: 40px;
+    }
+    .icon {
+        background-image: url('../img/affinity-letter.png');
+        background-size: cover;
+        display: inline-block;
+        width: 38px;
+        height: 38px;
+        margin-bottom: -10px;
+        margin-right: 8px;
+    }
+    .author {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
 .feature {
     height: 100%;
     text-align: center;
@@ -199,9 +248,11 @@ hr {
     justify-content: center;
     align-items: center;
     .title {
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
         padding-bottom: 20px;
+        text-transform: uppercase;
+        line-height: 40px;
     }
     .lead {
         font-size: 15px;
@@ -232,7 +283,10 @@ hr {
 }
 
 .feature1 {
-    background-image: url('../img/startup2.jpg');
+    background-image: url('../img/affinity-glass.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     position: relative;
     color: white;
     .overlay {
@@ -242,7 +296,7 @@ hr {
         bottom: 0;
         left: 0;
         background-color: $color__primary--myrtle-green;
-        opacity: .90;
+        opacity: .80;
     }
     .content {
         color: white;
@@ -251,7 +305,10 @@ hr {
 }
 
 .feature2 {
-    background-image: url('../img/startup2.jpg');
+    background-image: url('../img/affinity-path.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     position: relative;
     color: white;
     .overlay {
@@ -261,7 +318,7 @@ hr {
         bottom: 0;
         left: 0;
         background-color: $color__primary--purple;
-        opacity: .90;
+        opacity: .80;
     }
     .content {
         color: white;
@@ -270,7 +327,10 @@ hr {
 }
 
 .feature3 {
-    background-image: url('../img/startup2.jpg');
+    background-image: url('../img/affinity-crowd.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     position: relative;
     color: white;
     .overlay {
@@ -280,7 +340,7 @@ hr {
         bottom: 0;
         left: 0;
         background-color: $color__primary--slate-blue;
-        opacity: .90;
+        opacity: .80;
     }
     .content {
         color: white;
@@ -289,19 +349,38 @@ hr {
 }
 
 .feature-break {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 100px 0;
     text-align: center;
-    background-color: #eee;
+    position: relative;
+    background-image: url('../img/affinity-pattern.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #eee;
+        opacity: .65;
+    }
+    .content {
+        position: relative;
+    }
     .title {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
         text-transform: uppercase;
+        line-height: 60px;
     }
-    .lead {
+    .author {
         font-size: 18px;
+        font-weight: 500;
+    }
+    hr {
+        width: 30%;
+        border-top: 1px solid #ccc;
+        margin: 40px auto;
     }
 }
 
@@ -316,12 +395,14 @@ hr {
         text-align: center;
     }
     .title {
-        font-size: 50px;
+        font-size: 30px;
         font-weight: bold;
         text-transform: uppercase;
     }
     .lead {
-        font-size: 22px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 40px;
         padding: 20px;
     }
     .btn {
@@ -337,15 +418,14 @@ hr {
 }
 
 .gallery {
+    background-image: url('../img/new-york.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     .service-wrap {
         padding: 0;
     }
     .service {
-        background-image: url('../img/startup2.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
         height: 550px;
         position: relative;
         display: flex;
@@ -370,20 +450,19 @@ hr {
         color: white;
         position: relative;
         text-align: center;
-        padding: 100px;
     }
     .title {
         font-weight: 500;
-        font-size: 25px;
+        font-size: 20px;
         padding: 20px;
         margin-top: 10px;
         line-height: 35px;
     }
     img {
-        width: 100px;
+        width: 80px;
     }
     .icon1 {
-        height: 90px;
+        height: 70px;
     }
 }
 
@@ -399,28 +478,29 @@ hr {
         align-items: center;
     }
     .title {
-        font-size: 40px;
+        font-size: 25px;
         font-weight: bold;
         text-transform: uppercase;
         line-height: 60px;
     }
     .author {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
+        padding-bottom: 50px;
     }
     .icon {
         background-image: url('../img/affinity-letter.png');
         background-size: cover;
         display: inline-block;
-        width: 48px;
-        height: 48px;
+        width: 40px;
+        height: 40px;
         margin-bottom: -12px;
         margin-right: 8px;
     }
     hr {
         border-top: 1px solid #ccc;
-        width: 25%;
-        margin: 60px auto;
+        width: 20%;
+        margin: 20px auto;
     }
     .graph-wrap {
         display: flex;
@@ -428,36 +508,42 @@ hr {
         align-items: center;
     }
     .graph {
-        width: 450px;
-        height: 450px;
-        background: #c4c4c4;
+        width: 300px;
+        height: 300px;
+        background-image: url('../img/affinity-chart.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
         border-radius: 50%;
         box-shadow: $box-shadow-lg;
+        display: block;
     }
 }
 
 .contact {
     text-align: center;
-    padding: 70px 10px 30px 10px;
+    padding: 70px 10px 40px 10px;
     text-align: center;
+    position: relative;
     .content {
         padding-bottom: 40px;
     }
     .title {
         font-weight: bold;
-        font-size: 24px;
+        font-size: 30px;
         text-transform: uppercase;
     }
     .lead {
-        font-size: 15px;
-        padding: 10px;
+        font-size: 17px;
+        padding: 20px;
+        line-height: 40px;
     }
     label {
         font-size: 13px;
         font-weight: 500;
         display: block;
         text-align: left;
-        padding-top: 10px;
+        padding-top: 20px;
     }
     input {
         border: none;
@@ -489,7 +575,6 @@ hr {
     padding-top: 10px;
     background-image: url('../img/affinity-pattern.jpg');
     background-size: cover;
-    background-attachment: fixed;
     position: relative;
     .overlay {
         position: absolute;
@@ -514,7 +599,7 @@ hr {
         color: $color__primary--slate-blue;
         cursor: pointer;
     }
-    .disclaimer {
+    .copy {
         font-size: 12px;
         font-weight: 400;
         padding-top: 10px;
@@ -527,7 +612,19 @@ hr {
 }
 
 @media (min-width: $bp-md) {
+    .showcase {
+        .logo {
+            width: 400px;
+            height: 200px;
+        }
+    }
 
+    .feature-graph {
+        .graph {
+            width: 500px;
+            height: 500px;
+        }
+    }
 }
 
 @media (min-width: $bp-lg) {
@@ -590,6 +687,31 @@ hr {
         display: block;
     }
 
+    .mission {
+        .title {
+            font-size: 50px;
+        }
+        .lead {
+            font-size: 24px;
+            font-weight: 300;
+            padding: 25px 0;
+        }
+        hr {
+            width: 15%;
+            margin: 30px auto 40px auto;
+        }
+        .author {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: -11px;
+            margin-right: 7px;
+        }
+    }
+
     .feature {
         height: 100%;
         padding: 100px 0;
@@ -600,11 +722,11 @@ hr {
             padding-right: 0;
         }
         .title {
-            font-size: 52px;
-            line-height: 80px;
+            font-size: 40px;
+            line-height: 60px;
         }
         .lead {
-            font-size: 20px;
+            font-size: 19px;
             padding: 0;
             line-height: 65px;
         }
@@ -637,23 +759,81 @@ hr {
 
     .feature-break {
         .title {
-            font-size: 55px;
+            font-size: 40px;
+        }
+        .author {
+            font-size: 24px;
+            font-weight: 500
+        }
+        hr {
+            width: 20%;
+            margin: 60px auto 40px auto;
+        }
+    }
+
+    .feature-break2 {
+        .title {
+            font-size: 50px;
         }
         .lead {
-            font-size: 26px;
-            margin-top: 30px;
+            font-size: 22px;
+            padding: 20px;
+        }
+    }
+
+    .gallery {
+        background-attachment: fixed;
+        .title {
+            font-size: 25px;
+        }
+        img {
+            width: 100px;
+        }
+        .icon1 {
+            height: 90px;
+        }
+    }
+
+    .feature-graph {
+        .title {
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 60px;
+        }
+        .author {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .icon {
+            background-image: url('../img/affinity-letter.png');
+            background-size: cover;
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            margin-bottom: -12px;
+            margin-right: 8px;
+        }
+        hr {
+            border-top: 1px solid #ccc;
+            width: 25%;
+            margin: 60px auto;
+        }
+        .graph {
+            width: 550px;
+            height: 550px;
         }
     }
 
     .contact {
         padding-top: 100px;
         .container {
-            padding-left: 90px;
-            padding-right: 90px;
+            padding-left: 80px;
+            padding-right: 80px;
             position: relative;
         }
         .content {
-            padding-bottom: 80px;
+            padding-bottom: 60px;
         }
         .title {
             font-size: 42px;
@@ -662,27 +842,28 @@ hr {
             font-size: 20px;
         }
         label {
-            padding-top: 30px;
+            padding-top: 50px;
             font-size: 14px;
         }
         textarea {
-            height: 200px;
+            height: 250px;
         }
         .btn {
             position: absolute;
-            left: 90px;
+            left: 80px;
             cursor: pointer;
             &:hover {
                 opacity: .9;
             }
         }
         .disclaimer {
-            margin-top: 100px;
-            font-size: 15px;
+            margin-top: 110px;
+            font-size: 16px;
         }
     }
 
     .mastfoot {
+        background-attachment: fixed;
         .icon {
             font-size: 40px;
             margin: 20px;
@@ -690,7 +871,7 @@ hr {
                 opacity: .8;
             }
         }
-        .disclaimer {
+        .copy {
             font-size: 14px;
         }
     }
