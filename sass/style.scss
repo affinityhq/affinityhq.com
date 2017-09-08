@@ -241,18 +241,19 @@ hr {
 
 .feature {
     height: 100%;
-    text-align: center;
+    text-align: left;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     .title {
-        font-size: 25px;
+        font-size: 23px;
         font-weight: bold;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
         text-transform: uppercase;
         line-height: 40px;
+        padding-left: 10px;
     }
     .lead {
         font-size: 15px;
@@ -266,8 +267,7 @@ hr {
         margin: 0;
     }
     .bullet {
-        text-align: left;
-        padding: 0 0 20px 30px;
+        padding: 0 0 20px 10px;
     }
     .btn {
         background: $color__primary--myrtle-green;
@@ -418,12 +418,12 @@ hr {
 }
 
 .gallery {
-    background-image: url('../img/new-york.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
     .service-wrap {
         padding: 0;
+        background-image: url('../img/new-york.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
     .service {
         height: 550px;
@@ -619,10 +619,92 @@ hr {
         }
     }
 
+    .mission {
+        .title {
+            font-size: 35px;
+        }
+        .lead {
+            font-size: 18px;
+        }
+    }
+
+    .feature {
+        height: 100%;
+        padding: 100px 0;
+        text-align: left;
+        background-attachment: fixed;
+        .container {
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+        .title {
+            font-size: 30px;
+            line-height: 40px;
+            padding-left: 0;
+        }
+        .lead {
+            font-size: 19px;
+            padding: 0;
+            line-height: 65px;
+        }
+        .pitch {
+            padding: 0;
+            margin: 0;
+            list-style-position: inside;
+            list-style-type: disc;
+        }
+        .bullet {
+            font-size: 20px;
+            font-weight: 300;
+            margin: 50px 0;
+            padding: 0;
+        }
+        .btn {
+            margin-top: 30px;
+            padding: 9px 25px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            &:hover {
+                opacity: .9;
+            }
+        }
+    }
+
+    .feature-break {
+        .title {
+            font-size: 30px;
+        }
+    }
+
+    .gallery {
+        .title {
+            font-size: 25px;
+        }
+        img {
+            width: 100px;
+        }
+        .icon1 {
+            height: 90px;
+        }
+    }
+
     .feature-graph {
+        .title {
+            font-size: 35px;
+        }
         .graph {
             width: 500px;
             height: 500px;
+        }
+    }
+
+    .feature-break2 {
+        .title {
+            font-size: 35px;
+        }
+        .lead {
+            font-size: 18px;
         }
     }
 }
@@ -724,6 +806,7 @@ hr {
         .title {
             font-size: 40px;
             line-height: 60px;
+            padding-left: 0;
         }
         .lead {
             font-size: 19px;
@@ -741,9 +824,6 @@ hr {
             font-weight: 300;
             margin: 50px 0;
             padding: 0;
-        }
-        br {
-            display: none;
         }
         .btn {
             margin-top: 30px;
@@ -782,7 +862,9 @@ hr {
     }
 
     .gallery {
-        background-attachment: fixed;
+        .service-wrap {
+            background-attachment: fixed;
+        }
         .title {
             font-size: 25px;
         }
@@ -795,6 +877,9 @@ hr {
     }
 
     .feature-graph {
+        .content {
+            margin-top: 40px;
+        }
         .title {
             font-size: 40px;
             font-weight: bold;
@@ -806,9 +891,6 @@ hr {
             font-weight: bold;
         }
         .icon {
-            background-image: url('../img/affinity-letter.png');
-            background-size: cover;
-            display: inline-block;
             width: 48px;
             height: 48px;
             margin-bottom: -12px;

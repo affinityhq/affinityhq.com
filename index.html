@@ -8,12 +8,11 @@
         <meta name="description" content="Utah's top digital marketing agency">
         <meta name="author" content="Affinity Digital Marketing Agency">
 
-        <link rel="preload" href="dist/css/style.min.css" as="style">
         <link rel="icon" type="image/png" sizes="32x32" href="dist/img/affinity-letter.png">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700," rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link href="dist/css/style.min.css" rel="stylesheet">
+        <link rel="preload" as="style" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" onload="this.rel='stylesheet'">
+        <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700," onload="this.rel='stylesheet'">
+        <link rel="preload" as="font" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" onload="this.rel='stylesheet'">
+        <link rel="preload" as="style" href="dist/css/style.min.css" onload="this.rel='stylesheet'">
     </head>
     <body>
 
@@ -28,7 +27,7 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item nav-item2">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item nav-item3">
                         <a class="nav-link" href="#">Services</a>
@@ -45,7 +44,8 @@
 
         <header class="showcase">
             <video autoplay loop class="fillWidth">
-                <source src="assets/video/Busy-People.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                <source src="assets/video/Busy-People.mp4" type="video/mp4" />
+                <source src="assets/video/Busy-People.webm" type="video/webm" />
             </video>
             <div class="container h-100 d-flex justify-content-center align-items-center">
                 <div class="overlay"></div>
@@ -99,8 +99,8 @@
                 <div class="content">
                     <h2 class="title">Google is constantly changing. You need a company that changes & adapts for you.</h2>
                     <ul class="pitch">
-                        <li class="bullet">Google has over 200 ingredients that play a factor in how you are ranking online.</li><br>
-                        <li class="bullet">Google changes their algorithm on average one to two times per year.</li><br>
+                        <li class="bullet">Google has over 200 ingredients that play a factor in how you are ranking online.</li>
+                        <li class="bullet">Google changes their algorithm on average one to two times per year.</li>
                         <li class="bullet">We will update your website every time Google changes so you aren’t left in the dust.</li>
                     </ul>
                 </div>
@@ -113,7 +113,7 @@
                 <div class="content">
                     <h2 class="title">Don’t fall behind. Stay updated. Always!</h2>
                     <ul class="pitch">
-                        <li class="bullet">The problem with other “Companies” is they don’t consistently update you. <strong>We do.</strong></li><br>
+                        <li class="bullet">The problem with other “Companies” is they don’t consistently update you. <strong>We do.</strong></li>
                         <li class="bullet">Always stay up to date with a custom tailored experience.</li>
                         <li class="bullet">Revisions whenever you want them, whenever you need them.</li>
                     </ul>
@@ -127,8 +127,8 @@
                 <div class="content">
                     <h2 class="title">Experts in every and all categories to create the ultimate experience.</h2>
                     <ul class="pitch">
-                        <li class="bullet">Teams of specialized experts in every department tailored for you.</li><br>
-                        <li class="bullet">We designed full teams of experts so you know it's done the right way.</li><br>
+                        <li class="bullet">Teams of specialized experts in every department tailored for you.</li>
+                        <li class="bullet">We designed full teams of experts so you know it's done the right way.</li>
                         <li class="bullet">Everything we do is custom to what you want.</li>
                     </ul>
                 </div>
