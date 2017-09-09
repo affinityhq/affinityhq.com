@@ -20,6 +20,7 @@ $bp-sm: 544px;
 $bp-md: 768px;
 $bp-lg: 992px;
 $bp-xlg: 1200px;
+$bp-xxlg: 1500px;
 
 
 body, html {
@@ -955,5 +956,21 @@ hr {
             font-size: 14px;
         }
     }
+}
 
+@media (min-width: $bp-xxlg) {
+    .showcase {
+        .logo {
+            width: 750px;
+            height: 380px;
+        }
+    }
+    .feature {
+        .title {
+            font-size: 45px;
+        }
+        .bullet {
+            font-size: 25px;
+        }
+    }
 }
