@@ -52,10 +52,8 @@ hr {
 
 .masthead {
     color: white;
-    position: absolute;
-    top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
     .fa-bars {
         color: white;
         font-size: 30px;
@@ -65,7 +63,7 @@ hr {
         background-size: cover;
         width: 40px;
         height: 40px;
-        margin-top: 5px;
+        margin-top: 2px;
     }
     .nav-link {
         color: #5BC0EB;
@@ -152,7 +150,7 @@ hr {
 .social-fixed {
     position: fixed;
     left: 0;
-    top: 30%;
+    top: 34%;
     z-index: 100;
     color: white;
     display: none;
@@ -296,7 +294,7 @@ hr {
         bottom: 0;
         left: 0;
         background-color: $color__primary--myrtle-green;
-        opacity: .80;
+        opacity: .90;
     }
     .content {
         color: white;
@@ -318,7 +316,7 @@ hr {
         bottom: 0;
         left: 0;
         background-color: $color__primary--purple;
-        opacity: .80;
+        opacity: .90;
     }
     .content {
         color: white;
@@ -327,7 +325,7 @@ hr {
 }
 
 .feature3 {
-    background-image: url('../img/affinity-crowd.jpg');
+    background-image: url('../img/team.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -340,7 +338,7 @@ hr {
         bottom: 0;
         left: 0;
         background-color: $color__primary--slate-blue;
-        opacity: .80;
+        opacity: .90;
     }
     .content {
         color: white;
@@ -910,8 +908,8 @@ hr {
     .contact {
         padding-top: 100px;
         .container {
-            padding-left: 80px;
-            padding-right: 80px;
+            padding-left: 110px;
+            padding-right: 110px;
             position: relative;
         }
         .content {
@@ -932,7 +930,7 @@ hr {
         }
         .btn {
             position: absolute;
-            left: 80px;
+            left: 110px;
             cursor: pointer;
             &:hover {
                 opacity: .9;

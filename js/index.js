@@ -3,6 +3,7 @@ $(document).ready(function() {
     var $services = $('.nav-item3');
     var $contact = $('.nav-item4');
     var $breakBtn = $('.break-btn');
+    var $masthead = $('.masthead');
 
     var $gallery = $('.gallery');
     var $contactForm = $('.contact');
@@ -10,6 +11,16 @@ $(document).ready(function() {
 
     var $whole = $('html, body');
     var $arrow = $('.fa-angle-down');
+
+    $(window).scroll(function() {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test = 50;
+        if (y_scroll_pos > scroll_pos_test) {
+            $masthead.css({"background-color": "#353535"});
+        } else {
+            $masthead.css({"background-color": "transparent"});
+        }
+    })
     
     //Smooth scroll arrow
     $arrow.click(function(){
