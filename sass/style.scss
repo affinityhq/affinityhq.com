@@ -123,8 +123,6 @@ hr {
     .phone, .email {
         position: absolute;
         bottom: 0;
-        left: 0;
-        right: 0;
         z-index: 100;
         color: white;
         font-size: 16px;
@@ -132,9 +130,15 @@ hr {
         padding: 8px 14px;
         margin: 0 auto;
         text-align: center;
+        cursor: pointer;
     }
     .email {
         display: none;
+        left: 0;
+    }
+    .phone {
+        right: 0;
+        left: 0;
     }
     video {
         position: absolute;
@@ -598,6 +602,12 @@ hr {
         color: $color__primary--slate-blue;
         cursor: pointer;
     }
+    .address {
+        text-align: center;
+        position: relative;
+        font-weight: 400;
+        font-size: 13px;
+    }
     .copy {
         font-size: 12px;
         font-weight: 400;
@@ -751,6 +761,8 @@ hr {
             text-align: right;
             font-weight: 500;
             font-size: 16px;
+            right: 0;
+            left: auto;
         }
         .email {
             text-align: left;
@@ -909,8 +921,8 @@ hr {
     .contact {
         padding-top: 100px;
         .container {
-            padding-left: 110px;
-            padding-right: 110px;
+            padding-left: 120px;
+            padding-right: 120px;
             position: relative;
         }
         .content {
@@ -923,15 +935,15 @@ hr {
             font-size: 20px;
         }
         label {
-            padding-top: 50px;
+            padding-top: 40px;
             font-size: 14px;
         }
         textarea {
-            height: 250px;
+            height: 230px;
         }
         .btn {
             position: absolute;
-            left: 110px;
+            left: 120px;
             cursor: pointer;
             &:hover {
                 opacity: .9;
@@ -951,6 +963,9 @@ hr {
             &:hover {
                 opacity: .8;
             }
+        }
+        .address {
+            font-size: 16px;
         }
         .copy {
             font-size: 14px;
