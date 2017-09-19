@@ -1,0 +1,991 @@
+$color__primary--dark-blue: #192F3F;
+$color__primary--slate-blue: #284B63;
+$color__primary--jet-grey: #353535;
+$color__primary--myrtle-green: #3C6E71;
+$color__primary--gainsboro-grey: #D9D9D9;
+$color__primary--red: #ff0e00;
+$color__primary--purple: #1c1c29;
+
+$color__social--facebook: #3B5998;
+$color__social--twitter: #55ACEE;
+$color__social--google-plus: #DD4B39;
+$color__social--linkedin: #007BB5;
+$color__social--instagram: #125688;
+
+$box-shadow-sm: 0px 4px 4px rgba(0,0,0,0.25);
+$box-shadow-md: 0px 4px 15px rgba(0,0,0,0.25);
+$box-shadow-lg: 0px 6px 20px rgba(0,0,0,0.25);
+
+$bp-sm: 544px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xlg: 1200px;
+$bp-xxlg: 2000px;
+
+
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto' helvetica;
+    color: #555;
+    background-color: #eee;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a, a:hover, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+hr {
+    width: 90%;
+}
+
+.masthead {
+    color: white;
+    width: 100%;
+    z-index: 1000;
+    .fa-bars {
+        color: white;
+        font-size: 30px;
+    }
+    .logo {
+        background-image: url('../img/affinity-letter.png');
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+        margin-top: 2px;
+    }
+    .nav-link {
+        color: #5BC0EB;
+    }
+}
+
+.showcase {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $color__primary--dark-blue;
+        opacity: .8;
+    }
+    .logo {
+        background-image: url('../img/affinity-tag.png');
+        background-size: cover;
+        width: 300px;
+        height: 140px;
+        margin: 0 auto;
+    }
+    .content {
+        position: relative;
+        color: white;
+        margin-top: -80px;
+    }
+    .title {
+        font-size: 55px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    .lead {
+        font-size: 15px;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+    }
+    .arrow-icon {
+        position: absolute;
+        bottom: 0;
+        color: white;
+        font-size: 42px;
+        opacity: .8;
+        margin-bottom: -10px;
+        display: none;
+        cursor: pointer;
+    }
+    .phone, .email {
+        position: absolute;
+        bottom: 0;
+        z-index: 100;
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 8px 14px;
+        margin: 0 auto;
+        text-align: center;
+        cursor: pointer;
+    }
+    .email {
+        display: none;
+        left: 0;
+    }
+    .phone {
+        right: 0;
+        left: 0;
+    }
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+
+.social-fixed {
+    position: fixed;
+    left: 0;
+    top: 34%;
+    z-index: 100;
+    color: white;
+    display: none;
+    .social-icons {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .icon {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        cursor: pointer;
+        &:hover {
+            background-color: $color__primary--jet-grey;
+        }
+    }
+    .facebook {
+        background-color: $color__social--facebook;
+    }
+    .twitter {
+        background-color: $color__social--twitter;
+    }
+    .google-plus {
+        background-color: $color__social--google-plus;
+    }
+    .linkedin {
+        background-color: $color__social--linkedin;
+    }
+    .instagram {
+        background-color: $color__social--instagram;
+    }
+}
+
+.mission {
+    background-image: url('../img/affinity-pattern.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #eee;
+        opacity: .65;
+    }
+    .content {
+        position: relative;
+    }
+    .title {
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .lead {
+        font-size: 16px;
+        line-height: 40px;
+        padding: 25px 0;
+    }
+    hr {
+        border-top: 1px solid #ccc;
+        width: 30%;
+        margin-bottom: 40px;
+    }
+    .icon {
+        background-image: url('../img/affinity-letter.png');
+        background-size: cover;
+        display: inline-block;
+        width: 38px;
+        height: 38px;
+        margin-bottom: -10px;
+        margin-right: 8px;
+    }
+    .author {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.feature {
+    height: 100%;
+    text-align: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .title {
+        font-size: 23px;
+        font-weight: bold;
+        padding-bottom: 40px;
+        text-transform: uppercase;
+        line-height: 40px;
+        padding-left: 10px;
+    }
+    .lead {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 40px;
+        padding: 9px;
+    }
+    .pitch {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .bullet {
+        padding: 0 0 20px 10px;
+    }
+    .btn {
+        background: $color__primary--myrtle-green;
+        border: none;
+        border-radius: 1px;
+        font-size: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: white;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+}
+
+.feature1 {
+    background-image: url('../img/affinity-glass.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $color__primary--myrtle-green;
+        opacity: .90;
+    }
+    .content {
+        color: white;
+        position: relative;
+    }
+}
+
+.feature2 {
+    background-image: url('../img/affinity-path.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $color__primary--purple;
+        opacity: .90;
+    }
+    .content {
+        color: white;
+        position: relative;
+    }
+}
+
+.feature3 {
+    background-image: url('../img/team.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $color__primary--slate-blue;
+        opacity: .90;
+    }
+    .content {
+        color: white;
+        position: relative;
+    }
+}
+
+.feature-break {
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    background-image: url('../img/affinity-pattern.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #eee;
+        opacity: .65;
+    }
+    .content {
+        position: relative;
+    }
+    .title {
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 60px;
+    }
+    .author {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    hr {
+        width: 30%;
+        border-top: 1px solid #ccc;
+        margin: 40px auto;
+    }
+}
+
+.feature-break2 {
+    height: 400px;
+    background-color: $color__primary--purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content {
+        color: white;
+        text-align: center;
+    }
+    .title {
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .lead {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 40px;
+        padding: 20px;
+    }
+    .btn {
+        border-radius: 1px;
+        background-color: $color__primary--red;
+        color: white;
+        padding: 10px 30px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        box-shadow: $box-shadow-md;
+    }
+}
+
+.gallery {
+    .service-wrap {
+        padding: 0;
+        background-image: url('../img/new-york.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .service {
+        height: 550px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .overlay {
+        background-color: $color__primary--purple;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: .85;
+    }
+    .service2, .service3, .service6 {
+        .overlay {
+            background-color: $color__primary--red;
+        }
+    }
+    .content {
+        color: white;
+        position: relative;
+        text-align: center;
+    }
+    .title {
+        font-weight: 500;
+        font-size: 20px;
+        padding: 20px;
+        margin-top: 10px;
+        line-height: 35px;
+    }
+    img {
+        width: 80px;
+    }
+    .icon1 {
+        height: 70px;
+    }
+}
+
+.feature-graph {
+    padding: 75px 0;
+    background-color: #284B63;
+    color: white;
+    text-align: center;
+    .content-wrap {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title {
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 60px;
+    }
+    .author {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
+    .icon {
+        background-image: url('../img/affinity-letter.png');
+        background-size: cover;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin-bottom: -12px;
+        margin-right: 8px;
+    }
+    hr {
+        border-top: 1px solid #ccc;
+        width: 20%;
+        margin: 20px auto;
+    }
+    .graph-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .graph {
+        width: 300px;
+        height: 300px;
+        background-image: url('../img/affinity-chart.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        box-shadow: $box-shadow-lg;
+        display: block;
+    }
+}
+
+.contact {
+    text-align: center;
+    padding: 70px 10px 40px 10px;
+    text-align: center;
+    position: relative;
+    .content {
+        padding-bottom: 40px;
+    }
+    .title {
+        font-weight: bold;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    .lead {
+        font-size: 17px;
+        padding: 20px;
+        line-height: 40px;
+    }
+    label {
+        font-size: 13px;
+        font-weight: 500;
+        display: block;
+        text-align: left;
+        padding-top: 20px;
+    }
+    input {
+        border: none;
+        border-bottom: 1px solid #888;
+        background-color: transparent;
+    }
+    textarea {
+        border: 1px solid #888;
+        margin-top: 20px;
+        background-color: transparent;
+    }
+    .disclaimer {
+        font-size: 14px;
+        padding-top: 40px;
+    }
+    .btn {
+        background: $color__primary--myrtle-green;
+        border: 1px solid white;
+        border-radius: 3px;
+        font-size: 12px;
+        padding: 11px 35px;
+        color: white;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+}
+
+.mastfoot {
+    padding-top: 10px;
+    background-image: url('../img/affinity-pattern.jpg');
+    background-size: cover;
+    position: relative;
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #eee;
+        opacity: .65;
+    }
+    .social-icons {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+    }
+    .icon {
+        margin: 10px;
+        font-size: 25px;
+        display: inline-block;
+        color: $color__primary--slate-blue;
+        cursor: pointer;
+    }
+    .address {
+        text-align: center;
+        position: relative;
+        font-weight: 400;
+        font-size: 13px;
+    }
+    .copy {
+        font-size: 12px;
+        font-weight: 400;
+        padding-top: 10px;
+        position: relative;
+    }
+    .fa-copyright {
+        font-size: 12px;
+        position: relative;
+    }
+}
+
+@media (min-width: $bp-md) {
+    .showcase {
+        .logo {
+            width: 400px;
+            height: 200px;
+        }
+    }
+
+    .mission {
+        .title {
+            font-size: 35px;
+        }
+        .lead {
+            font-size: 18px;
+        }
+    }
+
+    .feature {
+        height: 100%;
+        padding: 100px 0;
+        text-align: left;
+        background-attachment: fixed;
+        .container {
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+        .title {
+            font-size: 30px;
+            line-height: 40px;
+            padding-left: 0;
+        }
+        .lead {
+            font-size: 19px;
+            padding: 0;
+            line-height: 65px;
+        }
+        .pitch {
+            padding: 0;
+            margin: 0;
+            list-style-position: inside;
+            list-style-type: disc;
+        }
+        .bullet {
+            font-size: 20px;
+            font-weight: 300;
+            margin: 50px 0;
+            padding: 0;
+        }
+        .btn {
+            margin-top: 30px;
+            padding: 9px 25px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            &:hover {
+                opacity: .9;
+            }
+        }
+    }
+
+    .feature-break {
+        .title {
+            font-size: 30px;
+        }
+    }
+
+    .gallery {
+        .title {
+            font-size: 25px;
+        }
+        img {
+            width: 100px;
+        }
+        .icon1 {
+            height: 90px;
+        }
+    }
+
+    .feature-graph {
+        .title {
+            font-size: 35px;
+        }
+        .graph {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    .feature-break2 {
+        .title {
+            font-size: 35px;
+        }
+        .lead {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: $bp-lg) {
+    hr {
+        width: 82%;
+    }
+    
+    .masthead {
+        .nav-link {
+            color: white;
+            font-weight: 500;
+            &::after {
+                content: '/';
+                padding-left: 14px;
+            }
+        }
+        .last-nav::after {
+            display: none;
+        }
+        .nav-link:hover::after {
+            color: white;
+        }
+        .nav-link:hover {
+            color: #ccc;
+        }
+    }
+
+    .showcase {
+        background-attachment: fixed;
+        background-position: center center;
+        .logo {
+            width: 575px;
+            height: 275px;
+        }
+        .title {
+            font-size: 60px;
+            letter-spacing: 10px;
+        }
+        .lead {
+            font-size: 20px;
+        }
+        .phone {
+            text-align: right;
+            font-weight: 500;
+            font-size: 16px;
+            right: 0;
+            left: auto;
+        }
+        .email {
+            text-align: left;
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .arrow-icon {
+            display: block;
+            z-index: 100;
+        }  
+    }
+
+    .social-fixed {
+        display: block;
+    }
+
+    .mission {
+        .title {
+            font-size: 50px;
+        }
+        .lead {
+            font-size: 24px;
+            font-weight: 300;
+            padding: 25px 0;
+        }
+        hr {
+            width: 15%;
+            margin: 30px auto 40px auto;
+        }
+        .author {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: -11px;
+            margin-right: 7px;
+        }
+    }
+
+    .feature {
+        height: 100%;
+        padding: 100px 0;
+        text-align: left;
+        background-attachment: fixed;
+        .container {
+            padding-left: 80px;
+            padding-right: 0;
+        }
+        .title {
+            font-size: 40px;
+            line-height: 60px;
+            padding-left: 0;
+        }
+        .lead {
+            font-size: 19px;
+            padding: 0;
+            line-height: 65px;
+        }
+        .pitch {
+            padding: 0;
+            margin: 0;
+            list-style-position: inside;
+            list-style-type: disc;
+        }
+        .bullet {
+            font-size: 23px;
+            font-weight: 300;
+            margin: 50px 0;
+            padding: 0;
+        }
+        .btn {
+            margin-top: 30px;
+            padding: 9px 25px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            &:hover {
+                opacity: .9;
+            }
+        }
+    }
+
+    .feature-break {
+        .title {
+            font-size: 40px;
+        }
+        .author {
+            font-size: 24px;
+            font-weight: 500
+        }
+        hr {
+            width: 20%;
+            margin: 60px auto 40px auto;
+        }
+    }
+
+    .feature-break2 {
+        .title {
+            font-size: 50px;
+        }
+        .lead {
+            font-size: 22px;
+            padding: 20px;
+        }
+    }
+
+    .gallery {
+        .service-wrap {
+            background-attachment: fixed;
+        }
+        .title {
+            font-size: 25px;
+        }
+        img {
+            width: 100px;
+        }
+        .icon1 {
+            height: 90px;
+        }
+    }
+
+    .feature-graph {
+        .content {
+            margin-top: 40px;
+        }
+        .title {
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 60px;
+        }
+        .author {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: -12px;
+            margin-right: 8px;
+        }
+        hr {
+            border-top: 1px solid #ccc;
+            width: 25%;
+            margin: 60px auto;
+        }
+        .graph {
+            width: 550px;
+            height: 550px;
+        }
+    }
+
+    .contact {
+        padding-top: 100px;
+        .container {
+            padding-left: 120px;
+            padding-right: 120px;
+            position: relative;
+        }
+        .content {
+            padding-bottom: 60px;
+        }
+        .title {
+            font-size: 42px;
+        }
+        .lead {
+            font-size: 20px;
+        }
+        label {
+            padding-top: 40px;
+            font-size: 14px;
+        }
+        textarea {
+            height: 230px;
+        }
+        .btn {
+            position: absolute;
+            left: 120px;
+            cursor: pointer;
+            &:hover {
+                opacity: .9;
+            }
+        }
+        .disclaimer {
+            margin-top: 110px;
+            font-size: 16px;
+        }
+    }
+
+    .mastfoot {
+        background-attachment: fixed;
+        .icon {
+            font-size: 40px;
+            margin: 20px;
+            &:hover {
+                opacity: .8;
+            }
+        }
+        .address {
+            font-size: 16px;
+        }
+        .copy {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (min-width: $bp-xxlg) {
+    .showcase {
+        .logo {
+            width: 750px;
+            height: 380px;
+        }
+    }
+    .feature {
+        .title {
+            font-size: 45px;
+        }
+        .bullet {
+            font-size: 25px;
+        }
+    }
+}
